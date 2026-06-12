@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cruising — Orca Navigation</title>
+  <meta name="description" content="Discover the art of cruising: passage planning, anchorage selection, provisioning, night watch routines and the quiet freedom of offshore yachting.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <span class="logo-icon">⬡</span> Orca Navigation
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="this.closest('header').querySelector('.site-nav').classList.toggle('open')">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sailing-skills.html">Sailing Skills</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="cruising.html" class="active">Cruising</a></li>
+          <li><a href="knowledge.html">Knowledge</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Cruising</p>
+      <h1>Cruising</h1>
+      <p style="color:var(--text-secondary); font-style:italic; margin-top:0.8rem;">The open sea does not hurry. Neither should the cruising sailor.</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 1: PASSAGE PLANNING ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>Passage Planning — The Art of the Chart Table</h2>
+      <div class="ornament"><span>🧭</span></div>
+
+      <div class="two-col">
+        <div class="prose">
+          <p>
+            A great passage begins not at the harbour mouth but at the chart table, hours or days before the lines are cast off. <strong>Passage planning</strong> is the navigator's meditation: tracing potential routes across the chart, probing tidal atlases for gate windows, consulting pilot books for anchorage depths, and squinting at synoptic forecasts for the window of favourable pressure that will carry you across the bay without drama.
+          </p>
+          <p>
+            With Orca, this ritual moves into the digital domain without losing its depth. Plot your intended route on the chart, set timed waypoints at tidal gates, and invoke the weather routing engine. Within seconds, the app proposes an alternative track — perhaps a small detour west to exploit a developing sea breeze on the third leg, arriving at the headland at slack water rather than battling a two-knot foul tide. The difference between a comfortable passage and an exhausting one often lies in these invisible adjustments.
+          </p>
+          <p>
+            Every waypoint in Orca can carry metadata: a note reminding the crew of a charted shoal nearby, a reminder to call the harbour master on VHF 37, or a fuel waypoint with the marina's lat/lon pre-loaded. The passage plan becomes a checklist, a logbook and a briefing document in one — shared instantly to every crew member's phone via the app's synchronisation feature.
+          </p>
+        </div>
+        <div class="img-frame" style="max-height:420px">
+          <img src="250723-ugo-fonolla-0372_a049a154a07384807fbe9b464a437ad4-1.jpg"
+               alt="Yacht at sea during a cruising passage" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: WEATHER WINDOW ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>Reading the Weather Window — Patience as a Virtue</h2>
+      <div class="ornament"><span>☁️</span></div>
+
+      <div class="prose" style="max-width:820px; margin:0 auto">
+        <p>
+          The cruising sailor does not fight the weather; they negotiate with it. A westbound Atlantic passage waits in the Azores High; a Baltic crossing times itself between the summer depressions that queue like freight trains from the west. The discipline of weather-waiting — nursing a cup of coffee in a snug harbour while the sky outside churns — is as integral to cruising as any seamanship skill.
+        </p>
+        <p>
+          Orca's weather display presents <strong>wind, wave, tide and current forecasts</strong> in layered overlays on the chart. Select a date and time slider and watch the forecast evolve: the isobars tighten and relax, the wind barbs shift direction, the wave-height colour field pales as the swell decays behind a departing low. The navigator can fast-forward 24, 48 or 72 hours to survey the entire weather window before committing to departure.
+        </p>
+
+        <div class="highlight-box">
+          <h3>Wave Forecast Along the Route</h3>
+          <p>Tap any point on your planned route and Orca shows the wave height, wave period and swell direction forecast at that exact position for the time you expect to pass it. For a 400-mile offshore passage, you can preview what the sea state will look like at the midpoint on the third night — before you leave the marina. Few tools offer this level of anticipatory intelligence.</p>
+        </div>
+
+        <p>
+          Offshore passages spanning multiple days require understanding of synoptic-scale patterns: the motion of fronts, the rotation of highs, the notorious acceleration of depressions over warm sea surface temperatures. Orca integrates ECMWF medium-range data alongside the high-resolution regional models, offering a five-day window that balances long-range awareness with near-term precision. The discrepancy between models — where they agree and where they diverge — itself communicates forecast confidence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: ANCHORAGES ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>Anchorages &amp; Harbours — Finding Rest on the Water</h2>
+      <div class="ornament"><span>⚓</span></div>
+
+      <div class="two-col">
+        <div class="img-frame" style="max-height:380px">
+          <img src="yacht_20250219_202505_new-img_82-1-img-u2HzhLOv.jpg"
+               alt="Yacht at anchor in a sheltered bay" loading="lazy">
+        </div>
+        <div class="prose">
+          <p>
+            The best anchorages are the ones the pilot book calls "uncomfortable in westerly swell" — because that is exactly where the fleet will not be. Finding them requires reading the chart with the same intimacy as a local fisherman: understanding that the contour line curving in behind the headland promises shelter, that the sandy patch ringed by kelp symbols holds an anchor better than the rock garden beyond it.
+          </p>
+          <p>
+            Orca's chart layer system allows the navigator to overlay tidal height predictions on the depth soundings — crucial when choosing an anchorage for a drying tidal range of three metres. The depth colour coding shifts in real time as tidal height changes, revealing which areas will drain to mud at low water and which retain swinging room throughout the tide. <strong>Smart depth alerts</strong> warn if the anchor rode scope becomes dangerously taut relative to the charted depth.
+          </p>
+          <p>
+            Marina approach planning integrates seamlessly: drop a waypoint on the marina berth, and Orca calculates ETAs accounting for tidal stream through the approach channel. A harbour master's VHF channel note in the waypoint description ensures the radio call is made at the right moment — not fumbled at the last second while threading between fishing boats at the entrance.
+          </p>
+          <ul>
+            <li>Use Orca's satellite imagery layer to scout anchorages before arrival.</li>
+            <li>Set a gentle anchor drag alarm — a circle on the chart beyond which the boat must not wander.</li>
+            <li>Tidal stream overlay reveals whether the ebb will set you onto the shoal overnight.</li>
+            <li>AIS shows other vessels at anchor, helping to estimate crowding and swinging room.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: NIGHT PASSAGES ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>Night Passages — Watches, Stars and Silence</h2>
+      <div class="ornament"><span>🌙</span></div>
+
+      <div class="prose" style="max-width:820px; margin:0 auto">
+        <p>
+          There is a specific species of peace that belongs only to the night watch: the boat moving steadily through darkness, the bow wave phosphorescing green-white beneath you, the constellations wheeling slowly overhead. The off-watch crew sleep below; the world belongs to the person standing helm. This is why people sail offshore — not to arrive, but to exist in this particular quality of solitude.
+        </p>
+        <p>
+          Night passages demand a different standard of preparation. Every crew member receives a watch briefing before darkness: waypoints to pass, traffic separation schemes to honour, lights to identify, hazards to avoid. The Orca passage plan, printed or displayed on the tablet at the chart table below, becomes the crew's shared intelligence. The watch-keeper on deck knows that the next waypoint is 23 miles ahead and bears 042°; the expected shipping lane crossing is in four hours; a fishing fleet is charted ten miles to the south.
+        </p>
+
+        <div class="blockquote">
+          "In rough weather at sea, with waves crashing over the deck and cold temperatures, it's certainly better and more reliable to have a dedicated navigation system hardened for the marine environment — the Orca Display 2 was designed precisely for this reality."
+          <cite>— Stephan Bodens, adapted from Segelreporter 2025</cite>
+        </div>
+
+        <p>
+          The Orca Display 2, mounted at the companionway in its waterproof bracket, displays the route in night mode. Cross-track error shows as a numerical value and a visual bar — the watch-keeper adjusts course to keep the boat on the thread without needing to interpret a complex chart in darkness. An automated waypoint alarm sounds when the boat approaches within a configurable distance, waking the navigator if needed and triggering a course alter to the next leg.
+        </p>
+        <p>
+          As dawn greys the eastern horizon and the lighthouse that marked a distant headland fades into daylight, the passage reveals itself in retrospect as something achieved without drama — which is, of course, the quiet triumph of good preparation. The sea had its opportunities; the navigator denied them.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo"><span class="logo-icon">⬡</span> Orca Navigation</a>
+          <p>Precision navigation instruments and software for sailors who demand the best from open-water passage-making. Born in Norway. Trusted worldwide.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Sailing</h4>
+          <ul>
+            <li><a href="sailing-skills.html">Sailing Skills</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="cruising.html">Cruising</a></li>
+            <li><a href="knowledge.html">Knowledge</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="Footer secondary navigation">
+          <h4>Orca System</h4>
+          <ul>
+            <li><a href="index.html">Orca Tablet Overview</a></li>
+            <li><a href="navigation.html#orca-core">Orca Core</a></li>
+            <li><a href="navigation.html#weather-routing">Weather Routing</a></li>
+            <li><a href="knowledge.html#polar">Polar Diagrams</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>⬡ &nbsp; Orca Navigation &nbsp;·&nbsp; Navigate the mystery &nbsp;·&nbsp; The sea keeps its secrets; your chart need not. &nbsp; ⬡</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge — Orca Navigation</title>
+  <meta name="description" content="Deep maritime knowledge: NMEA 2000 networks, polar diagrams, tides and currents, AIS technology, and the lore of the sea that underpins modern navigation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <span class="logo-icon">⬡</span> Orca Navigation
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="this.closest('header').querySelector('.site-nav').classList.toggle('open')">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sailing-skills.html">Sailing Skills</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="cruising.html">Cruising</a></li>
+          <li><a href="knowledge.html" class="active">Knowledge</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Knowledge</p>
+      <h1>Knowledge</h1>
+      <p style="color:var(--text-secondary); font-style:italic; margin-top:0.8rem;">Understanding the instruments, the data and the sea beneath both.</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 1: NMEA 2000 ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>Marine Electronics &amp; NMEA 2000 — The Vessel's Nervous System</h2>
+      <div class="ornament"><span>⚙️</span></div>
+
+      <div class="two-col">
+        <div class="prose">
+          <p>
+            A modern yacht's instrument network is invisible to the eye but omnipresent in its influence. Buried inside mast conduits, under cabin soles and behind instrument panels runs the <strong>NMEA 2000</strong> backbone — a robust, daisy-chained communications bus that carries every sensor's output to every display simultaneously. Depth sounder, wind transducer, engine monitoring, GPS, autopilot compass and AIS transponder all speak the same digital language on this shared wire.
+          </p>
+          <p>
+            The <strong>Orca Core</strong> joins this network as a native NMEA 2000 device. Once connected to the backbone's T-connector, it immediately begins broadcasting its own high-accuracy GNSS position, heading and IMU data to all other networked devices, while simultaneously consuming depth, wind, speed and engine data from the instruments already aboard. The CoPilot app on the tablet becomes a window onto the entire network — not merely a chart plotter, but a comprehensive instrument display.
+          </p>
+          <p>
+            For vessels with older NMEA 0183 equipment — the single-talker, multiple-listener serial protocol that preceded NMEA 2000 — the Core includes a 0183 adapter. Even legacy instruments from the 1990s can contribute their data streams to the modern Orca ecosystem, preserving the value of existing hardware while adding contemporary intelligence. <strong>Signal K</strong>, the open-source vessel data format increasingly adopted by the marine tech community, is also supported, opening the system to the wider universe of open-source instrumentation.
+          </p>
+        </div>
+        <div class="img-frame" style="max-height:400px">
+          <img src="gps-compass-and-gateway-the-orca-core-connects-the-app-to-the-instrument-system-via-bluetooth-or-wi-fi-it-supports-nmea-.jpg"
+               alt="Orca Core — GPS, compass and NMEA 2000 network gateway" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: POLAR DIAGRAMS ===== -->
+  <section class="section" id="polar">
+    <div class="container">
+      <h2>Polar Diagrams — The Soul of Your Boat Expressed in Numbers</h2>
+      <div class="ornament"><span>📈</span></div>
+
+      <div class="two-col">
+        <div class="img-frame" style="max-height:380px">
+          <img src="faster-and-higher-around-7-000-polar-diagrams-from-orc-measurements-can-be-used-the-values-can-be-customised-individuall-3.png"
+               alt="Orca polar diagram database — 7000 ORC measurements" loading="lazy">
+        </div>
+        <div class="prose">
+          <p>
+            A polar diagram is a vessel's fingerprint — a plot of theoretical boat speed at every combination of true wind angle and true wind speed. The values are plotted in a polar coordinate system: the upwind apex shows the maximum VMG close-hauled in a 10-knot breeze; the downwind region reveals the optimal gybe angle for running in 20 knots. Where your actual boat speed matches the polar, you are sailing efficiently. Where it falls short, something — sail trim, bottom fouling, rig tension — is bleeding performance.
+          </p>
+          <p>
+            Orca maintains a database of over <strong>7,000 polar diagrams</strong> sourced from the ORC (Offshore Racing Congress) measurement system, the global authority on yacht performance measurement. For most production vessels and many custom designs, a matching polar is available and loads automatically when you enter your boat's name during setup. For unique or unmeasured vessels, the values can be <strong>manually calibrated</strong> — adjusted empirically from observed boat speed versus the polar prediction — bringing the routing engine into alignment with the actual boat rather than the theoretical twin.
+          </p>
+          <p>
+            When the weather routing algorithm calculates an optimum passage, it queries the polar at every grid point of the weather forecast, choosing the course and sail plan that maximises progress toward the destination. The difference between a voyage planned with polar data and one planned without it can be measured in hours on a 200-mile offshore passage — and in significant fuel savings on a motoring leg.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: TIDES & CURRENTS ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>Tides &amp; Currents — The Sea's Hidden Rivers</h2>
+      <div class="ornament"><span>🌊</span></div>
+
+      <div class="prose" style="max-width:820px; margin:0 auto">
+        <p>
+          Beneath every chart lies a fourth dimension invisible to the eye: the ceaseless motion of water driven by the gravitational pull of the Moon and, to a lesser degree, the Sun. Tidal streams can exceed four knots through narrow straits — more than many cruising yachts can make to windward under engine. The navigator who ignores them pays in hours; the one who exploits them arrives in comfort.
+        </p>
+        <p>
+          Orca's tidal display shows predicted tidal stream vectors overlaid on the chart as animated arrows, their lengths scaling with speed and their directions rotating as the tide turns. A single glance reveals whether the flood is setting you toward the shoal to the north or carrying you effortlessly through the sound toward your anchorage. The navigator can advance the time slider to preview the stream at any stage of the passage — confirming that the tidal gate opens favourably three hours after planned departure and allowing the crew that extra hour of sleep.
+        </p>
+
+        <div class="highlight-box">
+          <h3>Tidal Height &amp; Depth Safety</h3>
+          <p>In shallow-water cruising grounds — the Wadden Sea, the Thames Estuary, the Bay of Fundy — tidal height determines whether a route exists at all. Orca cross-references the safety depth you set against the predicted tidal height at each point along the route, flagging segments that will be too shallow at your projected time of transit. Passages that appear viable at high water become dangerous at half-tide — Orca shows both realities simultaneously.</p>
+        </div>
+
+        <h3>Understanding COLREGS in Busy Waters</h3>
+        <p>
+          Where tides funnel traffic through narrow straits, the International Regulations for Preventing Collisions at Sea (COLREGS) govern every vessel. Traffic Separation Schemes — wide lanes that route large vessels away from coastal shipping hazards — are charted on Orca's display as shaded corridors. The crossing rules (Rule 10) that govern a sailing vessel crossing a TSS are among the most critical pieces of regulatory knowledge an offshore sailor can possess: failure to observe them places you in the path of vessels that, by their size and speed, cannot manoeuvre quickly enough to avoid collision.
+        </p>
+        <p>
+          The AIS layer on Orca makes these dynamics concrete: watch the cargo ships maintaining their lane with machinelike regularity, observe the CPA calculation updating as the range closes, and appreciate why the regulations were written before ever invoking your rights as a sailing vessel. In the domain of the sea, wisdom and courtesy outlast right-of-way every time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: AIS DEEP DIVE ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>AIS — Reading the Invisible Fleet</h2>
+      <div class="ornament"><span>📡</span></div>
+
+      <div class="two-col">
+        <div class="prose">
+          <p>
+            The Automatic Identification System broadcasts each vessel's identity, position, speed, course, type and destination on VHF frequencies 161.975 and 162.025 MHz — a continuous digital shout into the ether that every AIS receiver within 20–40 nautical miles can hear. Introduced in the early 2000s as a collision avoidance tool for large commercial vessels, AIS has since become indispensable aboard recreational yachts, transforming the darkened ocean from a mystery into a readable map of moving traffic.
+          </p>
+          <p>
+            Orca integrates AIS at two levels: <strong>onboard receiver data</strong> from a hardware unit plugged into the NMEA 2000 network (Class B transponder recommended for yachts — it both receives and transmits, making your vessel visible to commercial shipping), and <strong>internet-sourced AIS</strong> from MarineTraffic when cellular data is available. The internet supplement fills the gap beyond VHF horizon — revealing tankers 30 miles ahead that your VHF antenna cannot yet hear — and provides a situational overview while still in harbour planning the offshore departure.
+          </p>
+          <ul>
+            <li>CPA (Closest Point of Approach) calculates continuously for every AIS target.</li>
+            <li>TCPA (Time to CPA) triggers amber and red alerts as collision risk grows.</li>
+            <li>Vessel name, MMSI, size, speed and destination display on tap.</li>
+            <li>Anchored vessels display on the chart even in crowded anchorages with AIS transponders active.</li>
+          </ul>
+        </div>
+        <div class="img-frame" style="max-height:400px">
+          <img src="ais-if-an-ais-receiver-is-on-board-orca-uses-its-data-in-addition-online-ais-data-from-marinetraffic-is-displayed-from-w-1.jpg"
+               alt="Orca AIS display showing vessel traffic on the chart" loading="lazy">
+        </div>
+      </div>
+
+      <div class="prose mt-3" style="max-width:820px; margin:1.5rem auto 0">
+        <h3>Radar Overlay — Merging the Physical and the Digital</h3>
+        <p>
+          When a compatible marine radar is networked to the Orca system, the radar returns can be overlaid directly onto the chart display — aligning the radar picture with the charted geography of coastlines, hazards and sea marks. A bright echo at bearing 045°, range 3.2 miles becomes identifiable as the ferry terminal on the chart; the return from an unlighted fishing vessel resolves itself against the chart context as the uncharted hazard it truly is. The fusion of radar picture and vector chart is among the most powerful situational awareness tools available aboard a yacht.
+        </p>
+        <p>
+          This integration — app, GNSS, instruments, AIS, autopilot and radar, all visible through a single waterproof tablet screen — represents the full promise of the Orca system: not a collection of devices but a unified intelligence, born of Norwegian engineering, that speaks to the sailor in a language both ancient and new.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo"><span class="logo-icon">⬡</span> Orca Navigation</a>
+          <p>Precision navigation instruments and software for sailors who demand the best from open-water passage-making. Born in Norway. Trusted worldwide.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Sailing</h4>
+          <ul>
+            <li><a href="sailing-skills.html">Sailing Skills</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="cruising.html">Cruising</a></li>
+            <li><a href="knowledge.html">Knowledge</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="Footer secondary navigation">
+          <h4>Orca System</h4>
+          <ul>
+            <li><a href="index.html">Orca Tablet Overview</a></li>
+            <li><a href="navigation.html#orca-core">Orca Core</a></li>
+            <li><a href="navigation.html#weather-routing">Weather Routing</a></li>
+            <li><a href="knowledge.html#polar">Polar Diagrams</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>⬡ &nbsp; Orca Navigation &nbsp;·&nbsp; Navigate the mystery &nbsp;·&nbsp; The sea keeps its secrets; your chart need not. &nbsp; ⬡</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

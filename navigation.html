@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation — Orca Navigation</title>
+  <meta name="description" content="Master marine navigation with Orca: chart reading, GPS positioning, intelligent route planning, AIS traffic and autopilot integration on the open sea.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <span class="logo-icon">⬡</span> Orca Navigation
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="this.closest('header').querySelector('.site-nav').classList.toggle('open')">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sailing-skills.html">Sailing Skills</a></li>
+          <li><a href="navigation.html" class="active">Navigation</a></li>
+          <li><a href="cruising.html">Cruising</a></li>
+          <li><a href="knowledge.html">Knowledge</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Navigation</p>
+      <h1>Navigation</h1>
+      <p style="color:var(--text-secondary); font-style:italic; margin-top:0.8rem;">Charts, position and route — the sacred geometry of the sea.</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 1: CHARTS ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>Nautical Charts — Maps That Hold Lives</h2>
+      <div class="ornament"><span>🗺️</span></div>
+
+      <div class="two-col">
+        <div class="prose">
+          <p>
+            A nautical chart is not a map — it is a promise. It promises that the depth contours are accurate, that the buoys shown are lit, that the rocks charted barely beneath the surface will be visible only to the keel that touches them. Orca sources its charts directly from the official <strong>hydrographic institutes</strong> of each nation — the same agencies that maintain the paper charts aboard naval vessels — ensuring no gap exists between what your screen shows and what the sea conceals.
+          </p>
+          <p>
+            The <strong>Orca CoPilot chart presentation</strong> is deliberately restrained. The colour palette strips away visual noise: water runs from midnight-blue in deep channels to pale amber where the seabed rises toward danger. Depth contours beyond your pre-set safety depth fade into the background; those inside it glow with quiet urgency. Sea marks — cardinal buoys, lateral marks, leading lights — are rendered large enough to identify without squinting and remain legible in bright cockpit sunlight on the Display 2's anti-glare screen.
+          </p>
+          <p>
+            Charts update automatically when connected to the internet, drawing on the latest Notice to Mariners corrections. New wrecks, altered buoy positions and revised TSS boundaries arrive silently and instantly — a reassurance unimaginable to navigators who once took a month's delay between chart correction and chart amendment.
+          </p>
+        </div>
+        <div class="img-frame" style="max-height:420px">
+          <img src="the-colour-scheme-of-the-orca-nautical-charts-is-reduced-but-the-sea-marks-are-all-the-easier-to-recognise-3.jpg"
+               alt="Orca chart colour scheme showing clear sea marks" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: GPS & GNSS ===== -->
+  <section class="section" id="orca-core">
+    <div class="container">
+      <h2>GPS &amp; GNSS — Your Position in the Cosmos</h2>
+      <div class="ornament"><span>📡</span></div>
+
+      <div class="two-col">
+        <div class="img-frame" style="max-height:380px">
+          <img src="gps-compass-and-gateway-the-orca-core-connects-the-app-to-the-instrument-system-via-bluetooth-or-wi-fi-it-supports-nmea-.jpg"
+               alt="Orca Core GPS compass and network gateway unit" loading="lazy">
+        </div>
+        <div class="prose">
+          <p>
+            The <strong>Orca Core</strong> receives signals from four independent global navigation satellite systems simultaneously — GPS (USA), GLONASS (Russia), Galileo (Europe) and BeiDou (China). Where a single-constellation receiver loses accuracy in urban canyons or under dense cloud, the Core's multi-constellation antenna maintains sub-metre horizontal accuracy even in marginal conditions. Your dot on the chart is not an approximation; it is a fact.
+          </p>
+          <p>
+            Built into the Core's housing is a <strong>9-axis inertial measurement unit</strong> — three-axis accelerometer, gyroscope and magnetometer — that tracks the vessel's heading, heel and pitch independent of GPS. In coastal waters thick with radio interference or in the rare moments of satellite outage, inertial dead reckoning bridges the gap. The app displays true heading from the magnetometer-calibrated compass rather than the GPS-derived course over ground, critical when ghosting in zero wind before a marina entrance.
+          </p>
+          <p>
+            The Core connects to every device aboard via Bluetooth or Wi-Fi, distributing its position, heading and IMU data to the CoPilot app across the cockpit and simultaneously to any third-party chart plotter on the network. It joins the NMEA 2000 backbone as a gateway, injecting GPS talker sentences into the instrument bus for autopilot, radar and VHF DSC — all from a single, unobtrusive unit no larger than a thick paperback novel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: ROUTE PLANNING ===== -->
+  <section class="section" id="weather-routing">
+    <div class="container">
+      <h2>Route Planning &amp; Weather Routing — Intelligence Before Departure</h2>
+      <div class="ornament"><span>🌬️</span></div>
+
+      <div class="prose" style="max-width:820px; margin:0 auto">
+        <p>
+          A route without weather is a route drawn in ignorance. Orca dissolves that ignorance by fusing waypoint geometry with a living, breathing weather model. Tap your destination and select <em>Sail Routing</em>: within 30 seconds — for a passage of 300 miles or more — the algorithm has interrogated forecasts from eight meteorological services, consulted your vessel's polar diagram, and threaded a course that trades beating against headwinds for a series of favourable tacks timed to the shifting pressure gradient.
+        </p>
+        <p>
+          The result appears on the chart as a dotted thread weaving between waypoints, each leg annotated with the expected wind angle and speed. The navigator can scrub forward through the passage in time — watching how the wind arrows along the route shift from reach to run to head as the forecast evolves. A bridge opening that blocks passage at 14:00 but opens at 15:30 is accounted for; a tidal gate that demands arrival in a specific two-hour window is programmed as a time-locked waypoint.
+        </p>
+
+        <div class="highlight-box">
+          <h3>The Routing Engine</h3>
+          <p>Orca's routing engine queries the Danish, Norwegian and Swedish national meteorological services — regional models with higher spatial resolution over northern European waters than global models — alongside ECMWF and GFS data. For passages through archipelagos, fjords or tidal straits, the local-model advantage is measurable in minutes of passage time and metres of sea room from lee shores.</p>
+        </div>
+
+        <h3>Manual Waypoint Navigation</h3>
+        <p>
+          Where autorouting defers to human judgement — inside narrow harbour approaches, along waymarked race courses, through unmarked anchorage channels — Orca's manual waypoint system offers precision without complexity. A long-press on the chart plants a waypoint; drag to reposition it; tap to assign a name, a timed arrival or a passing distance. The resulting route can be exported as a GPX file to share with crew or to load aboard a stand-alone chart plotter as a backup. Routes can equally be imported from GPX, RTZ and RT3 formats — seamlessly integrating pre-planned passages from desktop software.
+        </p>
+
+        <h3>AIS &amp; Traffic Awareness</h3>
+        <p>
+          When a compatible AIS receiver is aboard, Orca plots every vessel within VHF range directly on the chart, coloured by CPA — closest point of approach. Targets closing on a collision course glow amber then red as TCPA shortens. The app can also supplement onboard AIS with live internet data from MarineTraffic, adding cargo ships and tankers at the edge of VHF range as ghostly silhouettes on the horizon — a full situational picture assembled long before binoculars are needed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: NIGHT NAVIGATION ===== -->
+  <section class="section">
+    <div class="container">
+      <h2>Night Navigation — Sailing by Starlight and Data</h2>
+      <div class="ornament"><span>🌙</span></div>
+
+      <div class="two-col">
+        <div class="prose">
+          <p>
+            The sea at night is a different country. Its hazards wear darkness like a cloak. Buoys that blazed orange in afternoon light are now reduced to the blink-code of their light character; shipping lanes that appeared on the daytime chart as abstract lines are revealed as rivers of moving steel. Night navigation demands that the navigator's eyes remain adapted to darkness — able to see the loom of a lighthouse above the horizon before the light itself rises — yet still read the chart and instruments as needed.
+          </p>
+          <p>
+            The <strong>Orca night display</strong> was engineered for this precise tension. Switching to night mode bathes the entire interface in deep red — the wavelength that least disrupts rhodopsin regeneration in the human retina. Chart colours shift to a red-shifted palette; instrument readings glow crimson; waypoint icons render as dark shadows against the muted chart. The navigator can glance at the Orca Display 2 mounted above the companionway and return their gaze to the dark water without losing hard-won night vision.
+          </p>
+          <ul>
+            <li>Night mode activates automatically by schedule or manually with a single tap.</li>
+            <li>Screen brightness can be reduced to near-zero for watch-keeping in total darkness.</li>
+            <li>AIS targets remain visible on the chart in night mode — colour-coded by threat level.</li>
+            <li>Route waypoints and XTE (cross-track error) display clearly for the helmsman on watch.</li>
+          </ul>
+        </div>
+        <div class="img-frame" style="max-height:400px">
+          <img src="orca-nachtmodus-5.png" alt="Orca night mode — dark red chart display" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo"><span class="logo-icon">⬡</span> Orca Navigation</a>
+          <p>Precision navigation instruments and software for sailors who demand the best from open-water passage-making. Born in Norway. Trusted worldwide.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Sailing</h4>
+          <ul>
+            <li><a href="sailing-skills.html">Sailing Skills</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="cruising.html">Cruising</a></li>
+            <li><a href="knowledge.html">Knowledge</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="Footer secondary navigation">
+          <h4>Orca System</h4>
+          <ul>
+            <li><a href="index.html">Orca Tablet Overview</a></li>
+            <li><a href="navigation.html#orca-core">Orca Core</a></li>
+            <li><a href="navigation.html#weather-routing">Weather Routing</a></li>
+            <li><a href="knowledge.html#polar">Polar Diagrams</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>⬡ &nbsp; Orca Navigation &nbsp;·&nbsp; Navigate the mystery &nbsp;·&nbsp; The sea keeps its secrets; your chart need not. &nbsp; ⬡</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
